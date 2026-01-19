@@ -1,10 +1,270 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>ByteBond</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ByteBond — Learn • Build • Secure</title>
+  <meta name="description" content="ByteBond is a student-first tech community focused on learning, building skills, and future cybersecurity services." />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>ByteBond</h1>
-  <p>Learning • Building • Securing</p>
+  <!-- Top bar -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="ByteBond home">
+        <span class="brandMark">BB</span>
+        <span class="brandText">ByteBond</span>
+      </a>
+
+      <button class="iconBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#resources">Resources</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact">Contact</a>
+        <button class="pill" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container heroGrid">
+        <div>
+          <p class="kicker">BCA Community • Notes • Skills</p>
+          <h1>Learn. Build. Secure.</h1>
+          <p class="sub">
+            ByteBond is a student-first community sharing free notes, resources, and practical learning
+            to grow into a professional cybersecurity brand.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="#resources">Get Resources</a>
+            <a class="btn" href="#contact">Join / Contact</a>
+          </div>
+
+          <div class="miniStats">
+            <div class="stat">
+              <div class="statNum" id="statNotes">50+</div>
+              <div class="statLabel">Notes & PDFs</div>
+            </div>
+            <div class="stat">
+              <div class="statNum" id="statTopics">20+</div>
+              <div class="statLabel">Topics Covered</div>
+            </div>
+            <div class="stat">
+              <div class="statNum" id="statWeeks">Weekly</div>
+              <div class="statLabel">Updates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card heroCard">
+          <h2>What ByteBond stands for</h2>
+          <ul class="checklist">
+            <li>Free notes & exam help for BCA</li>
+            <li>Skill building: Python, DBMS, Networking</li>
+            <li>Cybersecurity awareness (ethical & legal)</li>
+            <li>Future: security services company</li>
+          </ul>
+          <div class="badgeRow">
+            <span class="badge">Student-first</span>
+            <span class="badge">Practical</span>
+            <span class="badge">Ethical</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>About ByteBond</h2>
+          <p>Simple, clean, useful. Build trust now. Build a company later.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Mission</h3>
+            <p>
+              Help students learn faster with clear resources and practical guidance, and grow skills
+              toward real-world careers.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Vision</h3>
+            <p>
+              In the future, ByteBond becomes a trusted security brand delivering audits, testing, and training.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="section" id="resources">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Resources</h2>
+          <p>Add your notes/links here. Keep it organized.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>BCA Notes</h3>
+            <p>Unit-wise PDFs, previous year questions, important topics.</p>
+            <a class="link" href="#" aria-label="BCA Notes link">Add your notes link →</a>
+          </article>
+
+          <article class="card">
+            <h3>Skill Track</h3>
+            <p>Python, DBMS, OS, Networks — small daily practice.</p>
+            <a class="link" href="#" aria-label="Skill Track link">Add your roadmap link →</a>
+          </article>
+
+          <article class="card">
+            <h3>Cyber Awareness</h3>
+            <p>Scams, phishing, basic safety habits (ethical content only).</p>
+            <a class="link" href="#" aria-label="Cyber Awareness link">Add your posts link →</a>
+          </article>
+        </div>
+
+        <div class="tip">
+          Tip: Replace the “#” links with your Telegram/WhatsApp/Drive/GitHub links.
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="section" id="roadmap">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Roadmap</h2>
+          <p>A realistic path from student community → security company.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="tItem card">
+            <div class="tTop">
+              <span class="badge">Now</span>
+              <h3>Community + Resources</h3>
+            </div>
+            <p>Grow members, share quality notes, and keep everything structured.</p>
+          </div>
+
+          <div class="tItem card">
+            <div class="tTop">
+              <span class="badge">Next</span>
+              <h3>Skill Projects</h3>
+            </div>
+            <p>Small projects: Python tools, networking labs, simple web apps.</p>
+          </div>
+
+          <div class="tItem card">
+            <div class="tTop">
+              <span class="badge">Later</span>
+              <h3>Security Practice</h3>
+            </div>
+            <p>Legal labs, CTF learning, web security basics, reporting style.</p>
+          </div>
+
+          <div class="tItem card">
+            <div class="tTop">
+              <span class="badge">3 Years</span>
+              <h3>ByteBond Security Services</h3>
+            </div>
+            <p>Start with one service: audits / VAPT / training — then expand.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Contact</h2>
+          <p>Use this form for messages (front-end only). You can add real backend later.</p>
+        </div>
+
+        <div class="grid2">
+          <form class="card form" id="contactForm" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required minlength="2" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Write your message..." required minlength="10"></textarea>
+            </label>
+
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="formMsg" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="card">
+            <h3>Join ByteBond</h3>
+            <p>Add your group links here:</p>
+
+            <div class="contactList">
+              <div class="contactItem">
+                <span class="dot"></span>
+                <div>
+                  <div class="cTitle">Telegram</div>
+                  <a class="link" href="#">Add link</a>
+                </div>
+              </div>
+
+              <div class="contactItem">
+                <span class="dot"></span>
+                <div>
+                  <div class="cTitle">WhatsApp</div>
+                  <a class="link" href="#">Add link</a>
+                </div>
+              </div>
+
+              <div class="contactItem">
+                <span class="dot"></span>
+                <div>
+                  <div class="cTitle">GitHub</div>
+                  <a class="link" href="https://github.com/anmol-programmer" target="_blank" rel="noreferrer">
+                    github.com/anmol-programmer
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p class="small">
+              Note: This website is for learning + community. Any security work must be ethical and authorized.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footRow">
+        <p>© <span id="year"></span> ByteBond. All rights reserved.</p>
+        <a class="link" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <button id="toTop" class="toTop" aria-label="Back to top">↑</button>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

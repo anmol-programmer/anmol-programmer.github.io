@@ -3,268 +3,262 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ByteBond — Learn • Build • Secure</title>
-  <meta name="description" content="ByteBond is a student-first tech community focused on learning, building skills, and future cybersecurity services." />
-
+  <title>ByteBond — BCA Notes, PYQs & Resources</title>
+  <meta name="description" content="ByteBond: Notes, Guess Q&A, and Previous Year Questions for BCA (1st–5th semester)." />
+  <meta name="theme-color" content="#0b1020" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <!-- Top bar -->
-  <header class="header" id="top">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="ByteBond home">
-        <span class="brandMark">BB</span>
-        <span class="brandText">ByteBond</span>
+  <header class="topbar" id="top">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="ByteBond Home">
+        <img class="logo" src="logo.png" alt="ByteBond logo" />
+        <div class="brandText">
+          <div class="name">ByteBond</div>
+          <div class="tag">BCA Notes • PYQs • Resources</div>
+        </div>
       </a>
 
-      <button class="iconBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-        ☰
-      </button>
+      <div class="navRight">
+        <button class="chip" id="themeBtn" type="button" aria-label="Toggle theme">
+          <span class="chipIcon" aria-hidden="true">🌙</span>
+          <span class="chipText">Theme</span>
+        </button>
 
-      <nav class="menu" id="menu">
-        <a href="#about">About</a>
-        <a href="#resources">Resources</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#contact">Contact</a>
-        <button class="pill" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
-      </nav>
+        <button class="hamburger" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
+
+    <nav class="menu wrap" id="menu">
+      <a href="#syllabus">Syllabus</a>
+      <a href="#resources">Resources</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Join</a>
+    </nav>
   </header>
 
-  <!-- Hero -->
   <main>
+    <!-- HERO -->
     <section class="hero">
-      <div class="container heroGrid">
-        <div>
-          <p class="kicker">BCA Community • Notes • Skills</p>
-          <h1>Learn. Build. Secure.</h1>
-          <p class="sub">
-            ByteBond is a student-first community sharing free notes, resources, and practical learning
-            to grow into a professional cybersecurity brand.
+      <div class="wrap heroGrid">
+        <div class="heroLeft">
+          <div class="pillRow">
+            <span class="pill">For Tech Students</span>
+            <span class="pill">Specially for BCA (1st–5th Sem)</span>
+          </div>
+
+          <h1 class="title">
+            One place for <span class="grad">Notes</span>, <span class="grad2">Guess Q&A</span> and <span class="grad3">PYQs</span>.
+          </h1>
+
+          <p class="lead">
+            This website is for tech students—especially BCA (1st, 2nd, 3rd, 4th, 5th semester) students—for
+            full detailed notes, guess questions & answers, and previous year questions.
           </p>
 
           <div class="ctaRow">
             <a class="btn primary" href="#resources">Get Resources</a>
-            <a class="btn" href="#contact">Join / Contact</a>
+            <a class="btn ghost" href="#syllabus">View Syllabus</a>
           </div>
 
-          <div class="miniStats">
-            <div class="stat">
-              <div class="statNum" id="statNotes">50+</div>
-              <div class="statLabel">Notes & PDFs</div>
+          <div class="stats">
+            <div class="statCard">
+              <div class="statNum" id="statCourses">5</div>
+              <div class="statLbl">Semesters covered</div>
             </div>
-            <div class="stat">
-              <div class="statNum" id="statTopics">20+</div>
-              <div class="statLabel">Topics Covered</div>
+            <div class="statCard">
+              <div class="statNum">Notes</div>
+              <div class="statLbl">Organized & clean</div>
             </div>
-            <div class="stat">
-              <div class="statNum" id="statWeeks">Weekly</div>
-              <div class="statLabel">Updates</div>
+            <div class="statCard">
+              <div class="statNum">PYQs</div>
+              <div class="statLbl">Exam focused</div>
             </div>
           </div>
         </div>
 
-        <div class="card heroCard">
-          <h2>What ByteBond stands for</h2>
-          <ul class="checklist">
-            <li>Free notes & exam help for BCA</li>
-            <li>Skill building: Python, DBMS, Networking</li>
-            <li>Cybersecurity awareness (ethical & legal)</li>
-            <li>Future: security services company</li>
-          </ul>
-          <div class="badgeRow">
-            <span class="badge">Student-first</span>
-            <span class="badge">Practical</span>
-            <span class="badge">Ethical</span>
+        <div class="heroRight">
+          <div class="glassCard">
+            <div class="glassTop">
+              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+              <div class="glassTitle">Quick Links</div>
+            </div>
+
+            <div class="quickGrid">
+              <a class="quick" href="#resources">
+                <div class="qIcon">📁</div>
+                <div>
+                  <div class="qTitle">Drive / Notes</div>
+                  <div class="qSub">Add public folder link</div>
+                </div>
+              </a>
+
+              <a class="quick" href="https://chat.whatsapp.com/FRPUPb0pbVNG1rLMgPW0tg" target="_blank" rel="noreferrer">
+                <div class="qIcon">💬</div>
+                <div>
+                  <div class="qTitle">WhatsApp Group</div>
+                  <div class="qSub">Join ByteBond</div>
+                </div>
+              </a>
+
+              <a class="quick" href="https://github.com/anmol-programmer" target="_blank" rel="noreferrer">
+                <div class="qIcon">💻</div>
+                <div>
+                  <div class="qTitle">GitHub</div>
+                  <div class="qSub">Projects & updates</div>
+                </div>
+              </a>
+
+              <a class="quick" href="#syllabus">
+                <div class="qIcon">📚</div>
+                <div>
+                  <div class="qTitle">Syllabus</div>
+                  <div class="qSub">Semester-wise</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="notice">
+              <strong>Note:</strong> Only ethical learning & study help. No illegal activity.
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div class="wrap marquee">
+        <div class="marqueeTrack" aria-hidden="true">
+          <span>ByteBond • BCA Notes • PYQs • Guess Q&A • Resources • </span>
+          <span>ByteBond • BCA Notes • PYQs • Guess Q&A • Resources • </span>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="sectionHead">
-          <h2>About ByteBond</h2>
-          <p>Simple, clean, useful. Build trust now. Build a company later.</p>
+    <!-- SYLLABUS -->
+    <section class="section" id="syllabus">
+      <div class="wrap sectionHead">
+        <h2>Syllabus (Semester-wise)</h2>
+        <p>Search any paper code/title (example: <b>BCA-502</b>, <b>DBMS</b>, <b>Network</b>).</p>
+      </div>
+
+      <div class="wrap controls">
+        <div class="searchBox">
+          <span class="sIcon">🔎</span>
+          <input id="searchInput" type="search" placeholder="Search papers..." autocomplete="off" />
+          <button class="xBtn" id="clearSearch" type="button" aria-label="Clear search">✕</button>
         </div>
 
-        <div class="grid2">
-          <div class="card">
-            <h3>Mission</h3>
-            <p>
-              Help students learn faster with clear resources and practical guidance, and grow skills
-              toward real-world careers.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Vision</h3>
-            <p>
-              In the future, ByteBond becomes a trusted security brand delivering audits, testing, and training.
-            </p>
-          </div>
+        <div class="segmented" role="tablist" aria-label="Semester filter">
+          <button class="segBtn active" data-sem="all" role="tab" aria-selected="true">All</button>
+          <button class="segBtn" data-sem="1" role="tab">Sem 1</button>
+          <button class="segBtn" data-sem="2" role="tab">Sem 2</button>
+          <button class="segBtn" data-sem="3" role="tab">Sem 3</button>
+          <button class="segBtn" data-sem="4" role="tab">Sem 4</button>
+          <button class="segBtn" data-sem="5" role="tab">Sem 5</button>
+          <button class="segBtn" data-sem="6" role="tab">Sem 6</button>
         </div>
+      </div>
+
+      <div class="wrap grid" id="cards"></div>
+
+      <div class="wrap smallPrint">
+        Source: B.R.A. Bihar University BCA semester system (papers, marks, and syllabus outline). :contentReference[oaicite:2]{index=2}
       </div>
     </section>
 
-    <!-- Resources -->
+    <!-- RESOURCES -->
     <section class="section" id="resources">
-      <div class="container">
-        <div class="sectionHead">
-          <h2>Resources</h2>
-          <p>Add your notes/links here. Keep it organized.</p>
-        </div>
+      <div class="wrap sectionHead">
+        <h2>Resources</h2>
+        <p>Replace the Drive link with a public shared folder link (so everyone can access).</p>
+      </div>
 
-        <div class="grid3">
-          <article class="card">
-            <h3>BCA Notes</h3>
-            <p>Unit-wise PDFs, previous year questions, important topics.</p>
-            <a class="link" href="#" aria-label="BCA Notes link">Add your notes link →</a>
-          </article>
+      <div class="wrap resGrid">
+        <a class="resCard" href="https://drive.google.com/drive/u/0/my-drive" target="_blank" rel="noreferrer">
+          <div class="rIcon">📁</div>
+          <div>
+            <div class="rTitle">Drive (Notes / PDFs)</div>
+            <div class="rSub">Replace with public folder link</div>
+          </div>
+          <div class="rGo">→</div>
+        </a>
 
-          <article class="card">
-            <h3>Skill Track</h3>
-            <p>Python, DBMS, OS, Networks — small daily practice.</p>
-            <a class="link" href="#" aria-label="Skill Track link">Add your roadmap link →</a>
-          </article>
+        <a class="resCard" href="https://chat.whatsapp.com/FRPUPb0pbVNG1rLMgPW0tg" target="_blank" rel="noreferrer">
+          <div class="rIcon">💬</div>
+          <div>
+            <div class="rTitle">WhatsApp Group</div>
+            <div class="rSub">Ask doubts • Get updates</div>
+          </div>
+          <div class="rGo">→</div>
+        </a>
 
-          <article class="card">
-            <h3>Cyber Awareness</h3>
-            <p>Scams, phishing, basic safety habits (ethical content only).</p>
-            <a class="link" href="#" aria-label="Cyber Awareness link">Add your posts link →</a>
-          </article>
-        </div>
-
-        <div class="tip">
-          Tip: Replace the “#” links with your Telegram/WhatsApp/Drive/GitHub links.
-        </div>
+        <a class="resCard" href="https://github.com/anmol-programmer" target="_blank" rel="noreferrer">
+          <div class="rIcon">💻</div>
+          <div>
+            <div class="rTitle">GitHub</div>
+            <div class="rSub">Projects • Practice</div>
+          </div>
+          <div class="rGo">→</div>
+        </a>
       </div>
     </section>
 
-    <!-- Roadmap -->
-    <section class="section" id="roadmap">
-      <div class="container">
-        <div class="sectionHead">
-          <h2>Roadmap</h2>
-          <p>A realistic path from student community → security company.</p>
-        </div>
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap sectionHead">
+        <h2>FAQ</h2>
+      </div>
 
-        <div class="timeline">
-          <div class="tItem card">
-            <div class="tTop">
-              <span class="badge">Now</span>
-              <h3>Community + Resources</h3>
-            </div>
-            <p>Grow members, share quality notes, and keep everything structured.</p>
-          </div>
+      <div class="wrap faq">
+        <details class="faqItem">
+          <summary>How are exams patterned?</summary>
+          <p>As per the document: 10 long questions are given, students answer 5; duration 3 hours for each theory & practical paper. :contentReference[oaicite:3]{index=3}</p>
+        </details>
 
-          <div class="tItem card">
-            <div class="tTop">
-              <span class="badge">Next</span>
-              <h3>Skill Projects</h3>
-            </div>
-            <p>Small projects: Python tools, networking labs, simple web apps.</p>
-          </div>
+        <details class="faqItem">
+          <summary>Do you cover all semesters?</summary>
+          <p>Yes, this site is structured semester-wise for BCA (1st–6th). :contentReference[oaicite:4]{index=4}</p>
+        </details>
 
-          <div class="tItem card">
-            <div class="tTop">
-              <span class="badge">Later</span>
-              <h3>Security Practice</h3>
-            </div>
-            <p>Legal labs, CTF learning, web security basics, reporting style.</p>
-          </div>
-
-          <div class="tItem card">
-            <div class="tTop">
-              <span class="badge">3 Years</span>
-              <h3>ByteBond Security Services</h3>
-            </div>
-            <p>Start with one service: audits / VAPT / training — then expand.</p>
-          </div>
-        </div>
+        <details class="faqItem">
+          <summary>Is this only for study?</summary>
+          <p>Yes. This is for study resources and skill growth (ethical only).</p>
+        </details>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- JOIN / CONTACT -->
     <section class="section" id="contact">
-      <div class="container">
-        <div class="sectionHead">
-          <h2>Contact</h2>
-          <p>Use this form for messages (front-end only). You can add real backend later.</p>
+      <div class="wrap joinCard">
+        <div class="joinLeft">
+          <h2>Join ByteBond</h2>
+          <p>Get notes, PYQs, guess Q&A, and updates.</p>
+          <div class="joinRow">
+            <a class="btn primary" href="https://chat.whatsapp.com/FRPUPb0pbVNG1rLMgPW0tg" target="_blank" rel="noreferrer">Join WhatsApp</a>
+            <a class="btn ghost" href="https://github.com/anmol-programmer" target="_blank" rel="noreferrer">Visit GitHub</a>
+          </div>
         </div>
 
-        <div class="grid2">
-          <form class="card form" id="contactForm" novalidate>
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" required minlength="2" />
-            </label>
-
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@example.com" required />
-            </label>
-
-            <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Write your message..." required minlength="10"></textarea>
-            </label>
-
-            <button class="btn primary" type="submit">Send Message</button>
-            <p class="formMsg" id="formMsg" role="status" aria-live="polite"></p>
-          </form>
-
-          <div class="card">
-            <h3>Join ByteBond</h3>
-            <p>Add your group links here:</p>
-
-            <div class="contactList">
-              <div class="contactItem">
-                <span class="dot"></span>
-                <div>
-                  <div class="cTitle">Telegram</div>
-                  <a class="link" href="#">Add link</a>
-                </div>
-              </div>
-
-              <div class="contactItem">
-                <span class="dot"></span>
-                <div>
-                  <div class="cTitle">WhatsApp</div>
-                  <a class="link" href="#">Add link</a>
-                </div>
-              </div>
-
-              <div class="contactItem">
-                <span class="dot"></span>
-                <div>
-                  <div class="cTitle">GitHub</div>
-                  <a class="link" href="https://github.com/anmol-programmer" target="_blank" rel="noreferrer">
-                    github.com/anmol-programmer
-                  </a>
-                </div>
-              </div>
+        <div class="joinRight">
+          <div class="qrHint">
+            <div class="qrBox" aria-hidden="true">ByteBond</div>
+            <div class="qrText">
+              <div class="qrTitle">Next upgrade</div>
+              <div class="qrSub">Add Telegram + public Drive folder link</div>
             </div>
-
-            <p class="small">
-              Note: This website is for learning + community. Any security work must be ethical and authorized.
-            </p>
           </div>
         </div>
       </div>
+
+      <footer class="wrap footer">
+        <div>© <span id="year"></span> ByteBond</div>
+        <a class="toTop" href="#top">Back to top ↑</a>
+      </footer>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footRow">
-        <p>© <span id="year"></span> ByteBond. All rights reserved.</p>
-        <a class="link" href="#top">Back to top ↑</a>
-      </div>
-    </footer>
-
-    <button id="toTop" class="toTop" aria-label="Back to top">↑</button>
   </main>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
